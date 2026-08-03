@@ -1,0 +1,1 @@
+Tutorial resource: [angular.dev](https://angular.dev/tutorials/first-app)
