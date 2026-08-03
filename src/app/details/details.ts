@@ -56,7 +56,7 @@ export class Details {
 
   constructor(private changeDetectorRef: ChangeDetectorRef) {
     const housingLocationId = Number(this.route.snapshot.params['id']);
-    this.housingService.getHousingLocationById(housingLocationId).then((housingLocation) => {
+    this.housingService.getHousingLocationById(housingLocationId).subscribe((housingLocation) => {
       this.housingLocation = housingLocation;
       this.changeDetectorRef.markForCheck();
     });

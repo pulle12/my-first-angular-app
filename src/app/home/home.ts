@@ -28,7 +28,7 @@ export class Home {
   constructor(private changeDetectorRef: ChangeDetectorRef) {
     this.housingService
       .getAllHousingLocations()
-      .then((housingLocationList: HousingLocationInfo[]) => {
+      .subscribe((housingLocationList: HousingLocationInfo[]) => {
         this.housingLocationList = housingLocationList;
         this.filteredLocationList = housingLocationList;
         this.changeDetectorRef.markForCheck();
