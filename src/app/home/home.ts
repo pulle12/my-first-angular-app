@@ -36,7 +36,7 @@ export class Home {
       return;
     }
     this.filteredLocationList = this.housingLocationList.filter((housingLocation) =>
-      housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
+      housingLocation?.name.toLowerCase().includes(text.toLowerCase()),
     );
   }
 }
