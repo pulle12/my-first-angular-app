@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
       <img
         class="listing-photo"
         [src]="housingLocation().photo"
+        [routerLink]="['/details', housingLocation().id]"
         alt="Exterior photo of {{ housingLocation().name }}"
         crossorigin
       />
